@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognizant Interview Countdown</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      padding: 0 10px;
+    }
+    
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+    }
+    #company{
+      margin: 20px 0;
+      padding: 0 5px;
+      color: #28e1bf;
+      font-size: 50px;
+      line-height: 1.5;
+    }
+    
+    .timer {
+      color: #ffffff;
+      font-size: 35px;
+      margin-top: 20px;
+      text-align: left;
+      line-height: 1.5;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <h1>Time Remaining for </h1>
+  <h1 id="company"> Cognizant GenC Interview</h1>
+  <div class="timer" id="timer"></div>
+
+  <script>
+    // Set the target date for the interview (7th April 2025)
+    const targetDate = new Date('2025-04-07T00:00:00');
+
+    // Function to format the time remaining
+    function formatTime(ms) {
+      let days = Math.floor(ms / (24 * 60 * 60 * 1000));
+      let hours = Math.floor((ms % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+      let minutes = Math.floor((ms % (60 * 60 * 1000)) / (60 * 1000));
+      let seconds = Math.floor((ms % (60 * 1000)) / 1000);
+      return `${days} Days<br>${hours} Hours<br>${minutes} Minutes<br>${seconds} Seconds`;
+    }
+
+    // Update the timer every 1000ms (1 second)
+    function updateTimer() {
+      const now = new Date().getTime();
+      const timeLeft = targetDate.getTime() - now;
+
+      if (timeLeft <= 0) {
+        document.getElementById('timer').innerHTML = "Time's Up!";
+      } else {
+        document.getElementById('timer').innerHTML = formatTime(timeLeft);
+      }
+    }
+
+    // Set an interval to update the timer every second (1000ms)
+    setInterval(updateTimer, 1000);
+
+  </script>
+
+</body>
+</html>
