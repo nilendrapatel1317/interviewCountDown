@@ -40,8 +40,12 @@
       color: #ffffff;
       font-size: 35px;
       margin-top: 20px;
-      text-align: left;
+      text-align: center;
       line-height: 1.5;
+    }
+    span{
+      color: #28e1bf;
+      font-weight: bold;
     }
 
     
@@ -63,7 +67,7 @@
       let hours = Math.floor((ms % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
       let minutes = Math.floor((ms % (60 * 60 * 1000)) / (60 * 1000));
       let seconds = Math.floor((ms % (60 * 1000)) / 1000);
-      return `${days} Days<br>${hours} Hours<br>${minutes} Minutes<br>${seconds} Seconds`;
+      return `<span>${days}</span> Days<br><span>${hours}</span> Hours<br><span>${minutes}</span> Minutes<br><span>${seconds}</span> Seconds`;
     }
 
     // Update the timer every 1000ms (1 second)
