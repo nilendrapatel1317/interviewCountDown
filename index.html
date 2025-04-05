@@ -90,7 +90,7 @@
         const now = new Date().getTime();
         const timeLeft = targetDate.getTime() - now;
 
-        if (timeLeft >= 0) {
+        if (timeLeft <= 0) {
           document.getElementById('timeBox').innerHTML = `<br><br><br><h3>Time is completed !!<br><br> All The Best 👍</h3>`;
         } else {
           document.getElementById('timeBox').innerHTML = `<h1>Total Remaining Time </h1>
