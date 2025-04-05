@@ -69,8 +69,7 @@
     <h2>Interview Date : 7th Apirl 2025</h2>
     <br>
     <div id="timeBox">
-      <h1>Total Remaining Time </h1>
-      <div class="timer" id="timer"></div>
+      
     </div>
     
     <script>
@@ -92,9 +91,10 @@
         const timeLeft = targetDate.getTime() - now;
 
         if (timeLeft >= 0) {
-          document.getElementById('timeBox').innerHTML = `<h3>Time is completed !!<br><br> All The Best 👍</h3>`;
+          document.getElementById('timeBox').innerHTML = `<br><br><br><h3>Time is completed !!<br><br> All The Best 👍</h3>`;
         } else {
-          document.getElementById('timer').innerHTML = formatTime(timeLeft);
+          document.getElementById('timeBox').innerHTML = `<h1>Total Remaining Time </h1>
+                                                       <div class="timer" id="timer">${formatTime(timeLeft)}</div>`;
         }
       }
 
