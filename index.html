@@ -64,10 +64,7 @@
     </style>
   </head>
 
-  <body>
-    <h1 id="company"> Cognizant GenC Interview</h1>
-    <h2>Interview Date : 7th Apirl 2025</h2>
-    <br>
+  <body> 
     <div id="timeBox">
       
     </div>
@@ -91,10 +88,16 @@
         const timeLeft = targetDate.getTime() - now;
 
         if (timeLeft <= 0) {
-          document.getElementById('timeBox').innerHTML = `<br><br><br><h3>Time is completed !!<br><br> All The Best 👍</h3>`;
+          document.getElementById('timeBox').innerHTML = `<h1 id="company"> Cognizant GenC Interview</h1>
+                                                          <h2>Interview Date : 7th Apirl 2025</h2>
+                                                          <br><br><br><br>
+                                                          <h3>Time is completed !!<br><br> All The Best 👍</h3>`;
         } else {
-          document.getElementById('timeBox').innerHTML = `<h1>Total Remaining Time </h1>
-                                                       <div class="timer" id="timer">${formatTime(timeLeft)}</div>`;
+          document.getElementById('timeBox').innerHTML = `<h1 id="company"> Cognizant GenC Interview</h1>
+                                                          <h2>Interview Date : 7th Apirl 2025</h2>
+                                                          <br>
+                                                          <h1>Total Remaining Time </h1>
+                                                          <div class="timer" id="timer">${formatTime(timeLeft)}</div>`;
         }
       }
 
