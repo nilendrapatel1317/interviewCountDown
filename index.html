@@ -33,6 +33,12 @@
       h2{
         color: red;
       }
+      h3 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+      }
 
 
       #company {
@@ -86,7 +92,7 @@
         const timeLeft = targetDate.getTime() - now;
 
         if (timeLeft >= 0) {
-          document.getElementById('timeBox').innerHTML = `<h2>Time is completed !!<br><br>Today you have interview !! <br><br> All The Best 👍</h2>`;
+          document.getElementById('timeBox').innerHTML = `<h3>Time is completed !!<br><br> All The Best 👍</h3>`;
         } else {
           document.getElementById('timer').innerHTML = formatTime(timeLeft);
         }
