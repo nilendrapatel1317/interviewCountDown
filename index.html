@@ -62,9 +62,11 @@
     <h1 id="company"> Cognizant GenC Interview</h1>
     <h2>Interview Date : 7th Apirl 2025</h2>
     <br>
-    <h1>Time Remaining for </h1>
-    <div class="timer" id="timer"></div>
-
+    <div id="timeBox">
+      <h1>Total Remaining Time </h1>
+      <div class="timer" id="timer"></div>
+    </div>
+    
     <script>
       // Set the target date for the interview (7th April 2025)
       const targetDate = new Date('2025-04-07T00:00:00');
@@ -83,8 +85,8 @@
         const now = new Date().getTime();
         const timeLeft = targetDate.getTime() - now;
 
-        if (timeLeft <= 0) {
-          document.getElementById('timer').innerHTML = "Time's Up!";
+        if (timeLeft >= 0) {
+          document.getElementById('timeBox').innerHTML = `<h1>Time is completed !!<br>Today you have interview !! <br> All The Best 👍</h1>`;
         } else {
           document.getElementById('timer').innerHTML = formatTime(timeLeft);
         }
