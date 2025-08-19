@@ -5,12 +5,9 @@ A sleek, real-time countdown timer built for tracking interview dates. This proj
 ## 📸 Screenshots
 
 ### Active Countdown View
-![Active Countdown Timer](images/active-countdown.png)
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/94c760e1-d6d8-4d19-8160-7519a4c17293" />
 *Real-time countdown showing days, hours, minutes, and seconds remaining*
 
-### Completion View
-![Interview Completed](images/completed-timer.png)
-*Motivational message displayed when countdown reaches zero*
 
 > **Note**: To add screenshots to your repository, create an `images` folder and upload your screenshots. Then they will display automatically above!
 
