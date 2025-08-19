@@ -2,6 +2,18 @@
 
 A sleek, real-time countdown timer built for tracking interview dates. This project was specifically created to count down to a **Cognizant GenC Interview** scheduled for April 7th, 2025.
 
+## 📸 Screenshots
+
+### Active Countdown View
+![Active Countdown Timer](images/active-countdown.png)
+*Real-time countdown showing days, hours, minutes, and seconds remaining*
+
+### Completion View
+![Interview Completed](images/completed-timer.png)
+*Motivational message displayed when countdown reaches zero*
+
+> **Note**: To add screenshots to your repository, create an `images` folder and upload your screenshots. Then they will display automatically above!
+
 ## 🎯 Purpose
 
 This countdown timer helps you stay motivated and track the remaining time until your important interview date. It provides a visual representation of days, hours, minutes, and seconds remaining, keeping you focused on your preparation goals.
@@ -141,6 +153,31 @@ Potential improvements could include:
 - Progress tracking features
 - Calendar integration
 - Motivational quotes rotation
+
+## 📸 How to Add Screenshots
+
+To complete the documentation with visual examples:
+
+1. **Take Screenshots**:
+   - Open `index.html` in your browser
+   - Take a screenshot of the active countdown timer
+   - Take a screenshot of the completion message (or modify date to future for active view)
+
+2. **Upload to Repository**:
+   ```bash
+   # Create images folder
+   mkdir images
+   
+   # Add your screenshots
+   # active-countdown.png - showing the live timer
+   # completed-timer.png - showing completion message
+   ```
+
+3. **Upload via GitHub**:
+   - Go to your repository
+   - Click "Add file" → "Upload files"
+   - Create "images" folder and upload screenshots
+   - Commit the changes
 
 ## 📞 Contact
 
